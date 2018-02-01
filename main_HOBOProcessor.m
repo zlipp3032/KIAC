@@ -30,7 +30,7 @@ clc                                     %Clear command window
 clear all                               %Clear workspace
 close all                               %Clear all figures
 %% User Input
-Location = '/Users/zlipp3032/Google Drive/KIAC/Assessments - working directory/1801 Bekaert/Post Assessment/Data Loggers/1801_Comp1.csv';
+Location = '/Users/zlipp3032/Google Drive/KIAC/Assessments - working directory/1801 Bekaert/Post Assessment/Data Loggers/1801_Comp3_VFD.csv';
 Number = 1000; 
 Voltage = 480; 
 Current_Limit = 10;

@@ -9,7 +9,8 @@ Real_Current = A.data;
 Memory_Slot = A.textdata(:,1);
 Time_Stamp = A.textdata(:,2);
 
-Title = Memory_Slot(1);
+Title_bar = char(Memory_Slot(1));
+Title = Title_bar(17:end-1);
 
 % Create a rolling average of the real current to eliminate unwanted data
 for i = (1+averageroll):(length(Real_Current)-averageroll)

@@ -11,7 +11,7 @@ z = linspace(Start_Date,End_Date,length(AC1));
 plot(y,RC1,'linewidth',1.5)
 hold on
 plot(z,AC1,'r --','linewidth',1.5)
-title(['Current Draw of',' ' ,Title],'interpreter','latex','Fontsize',16)
+title(['Current Draw of',' ' ,num2str(Title)],'interpreter','latex','Fontsize',16)
 xlabel('Date (mm/dd)','interpreter','latex','Fontsize',16)
 ylabel('Current (A)','interpreter','latex','Fontsize',16)
 Legend = legend('Real Current','Average Current');
@@ -23,7 +23,7 @@ xlim([Start_Date End_Date])
 
 figure(2)
 plot(z,AC1,'linewidth',1.5)
-title(['Average Current Draw of',' ', Title],'interpreter','latex','Fontsize',16)
+title(['Average Current Draw of',' ', num2str(Title)],'interpreter','latex','Fontsize',16)
 xlabel('Date (mm/dd)','interpreter','latex','Fontsize',16)
 ylabel('Average Current (A)','interpreter','latex','Fontsize',16)
 grid('on')
@@ -34,7 +34,7 @@ figure(3)
 l = linspace(Start_Date,End_Date,length(URC1));
 m = linspace(Start_Date,End_Date,length(Scoobie1));
 plot(l,URC1,'k',m,Scoobie1,'-- b','linewidth',1.5)
-title(['Electrical Loading Current Draw of', ' ', Title],'interpreter','latex','Fontsize',16)
+title(['Electrical Loading Current Draw of', ' ', num2str(Title)],'interpreter','latex','Fontsize',16)
 xlabel('Date (mm/dd)','interpreter','latex','Fontsize',16)
 ylabel('Loaded Current (A)','interpreter','latex','Fontsize',16)
 Legend = legend('Useful Real Current','Scoobiedoo');
